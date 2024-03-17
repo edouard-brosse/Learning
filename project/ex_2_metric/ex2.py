@@ -17,7 +17,7 @@ def custom_metric(sample1, sample2):
         categorical_difference += weights[feature][sample1[feature]] != weights[feature][sample2[feature]]
     
     return numeric_difference + categorical_difference
-
+ 
 num_samples = len(data)
 dissimilarity_matrix = np.zeros((num_samples, num_samples))
 for i in range(num_samples):
